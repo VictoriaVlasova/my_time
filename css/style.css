@@ -1,0 +1,39 @@
+* {
+   box-sizing: border-box;
+}
+html, body {
+   height: 100%;
+   margin: 0;
+   box-sizing: border-box;
+   background: rgb(21, 38, 70);
+}
+
+@font-face {
+font-family: 'Syne Mono';
+font-weight: bold;
+font-style: normal;
+}
+@media all and (max-widht: 600px) {
+   p {
+      font-family: 'Syne Mono';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 2em;
+      color: cornsilk;
+      position: fixed;
+      margin: 10%;
+   }
+}
+.container {
+   max-width: 1200px;
+   margin: 0 auto;
+}
+p {
+   font-family: 'Syne Mono';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 350px;
+   color: rgb(214, 212,212);
+   position: fixed;
+   margin: 10%;
+}
