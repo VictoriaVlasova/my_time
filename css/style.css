@@ -5,35 +5,42 @@ html, body {
    height: 100%;
    margin: 0;
    box-sizing: border-box;
-   background: rgb(21, 38, 70);
+   background: #78a81e;
 }
 
 @font-face {
-font-family: 'Syne Mono';
-font-weight: bold;
-font-style: normal;
-}
-@media all and (max-widht: 600px) {
+   font-family: 'Gotham Pro';
+   src: url('GothamPro-Bold.eot');
+   src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+       url('GothamPro-Bold.eot?#iefix') format('embedded-opentype'),
+       url('GothamPro-Bold.woff2') format('woff2'),
+       url('GothamPro-Bold.woff') format('woff'),
+       url('GothamPro-Bold.ttf') format('truetype');
+   font-weight: bold;
+   font-style: normal;
+ }
+@media all and (max-width: 600px) {
    p {
-      font-family: 'Syne Mono';
-      font-style: normal;
-      font-weight: 700;
-      font-size: 2em;
-      color: cornsilk;
-      position: fixed;
-      margin: 10%;
-   }
+       font-family: 'Gotham Pro';
+       font-style: normal;
+       font-weight: 700;
+       font-size: 2em;
+       color: #fff;
+       position: fixed;
+       margin: 10%;
+   } 
 }
 .container {
-   max-width: 1200px;
-   margin: 0 auto;
+  max-width: 1200px;
+  margin: 0 auto; 
 }
+
 p {
-   font-family: 'Syne Mono';
+   font-family: 'Gotham Pro';
    font-style: normal;
    font-weight: 700;
    font-size: 350px;
-   color: rgb(214, 212,212);
+   color: rgb(214, 212, 212);
    position: fixed;
    margin: 10%;
-}
+} 

@@ -1,19 +1,19 @@
-function startTime ()
+function startTime()
 {
-   var tm=new Date();
-   var h=tm.getHours();
-   var m=tm.getMinutes();
-   /*var s=tm.getSeconds()*/
-   m=checkTime(m);
-   /*s=checkTime(s)*/
-   document.getElementByld('txt').innerHTML=h+":"=m
-   t=setTimeout('startTime()'500)
+var tm=new Date();
+var h=tm.getHours();
+var m=tm.getMinutes();
+/*var s=tm.getSeconds();*/
+m=checkTime(m);
+/*s=checkTime(s);*/
+document.getElementById('txt').innerHTML=h+":"+m;
+t=setTimeout('startTime()',500);
 }
 function checkTime(i)
 {
-   if (i<10)
+if (i<10)
 {
-   i="0"+i
+i="0" + i;
 }
-return i
+return i;
 }
